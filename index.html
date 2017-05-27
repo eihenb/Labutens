@@ -1,243 +1,446 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Лабутены</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/a93d477435.js"></script>
 </head>
 <body>
     <header class="main-header">
+        <div class="container">
         <div class="header-top">
-            <div class="socials">
-                <div class="socials__icon">
-                    <a href="#" class="socials__link">
-                        <img src="#" alt="" class="social__link-logo">
-                    </a>
-                </div>
+                <div class="socials">
+                    <div class="socials__icon">
+                        <a href="#" class="socials__link">
+                            <i class="fa fa-facebook social__link-logo" aria-hidden="true"></i>
+                        </a>
+                    </div>
 
-                <div class="socials__icon">
-                    <a href="#" class="socials__link">
-                        <img src="#" alt="" class="social__link-logo">
-                    </a>
+                    <div class="socials__icon">
+                        <a href="#" class="socials__link">
+                            <i class="fa fa-vk social__link-logo" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="socials__icon">
+                        <a href="#" class="socials__link">
+                            <i class="fa fa-twitter social__link-logo" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="socials__icon">
-                    <a href="#" class="socials__link">
-                        <img src="#" alt="" class="social__link-logo">
-                    </a>
+                <div class="user-entry">
+                    <span class="user-entry__btn">
+                        <a href="#" class="user-entry__field">Вход / </a>
+                        <a href="#" class="user-entry__field">регистрация</a>
+                    </span>
                 </div>
-            </div>
-            <div class="user-entry">
-                <span class="user-entry__btn">
-                    <a href="#" class="user-entry__field">Вход / регистрация</a>
-                </span>
-            </div>
         </div>
         <div class="header-bottom">
             <div class="logo">
-                <a href="#" class="logo__item"></a>
+                <a href="#" class="logo__item">
+                    <img src="img/main-logo.jpg" alt="" class="logo__img">
+                </a>
             </div>
             <div class="search">
-                <input type="text" class="search__field">
-                <a href="#" class="search__btn"></a>
+                <input type="text" class="search__field" placeholder="Поиск">
+                <a href="#" class="search__btn">
+                    <img src="img/search-img.png" alt="" class="search__img">
+                </a>
             </div>
             <div class="basket">
                 <a href="#" class="basket__pic"></a>
-                <span class="basket__order">Корзина</span>
-                <span class="basket__order">Покупок: 0</span>
+                <span class="basket__order">Корзина</span></br>
+                <span class="basket__order-count">Покупок: 0</span>
             </div>
         </div>
+        </div>
+        <nav class="nav">
+            <div class="container">
+            <ul class="nav__block">
+                <li class="nav__items nav__items--border">
+                    <a href="#" alt="" class="nav__links">Каталог</a>
+                </li>
+                <li class="nav__items nav__items--border">
+                    <a href="#" alt="" class="nav__links">Акции</a>
+                </li>
+                <li class="nav__items nav__items--border">
+                    <a href="#" alt="" class="nav__links">О нас</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" alt="" class="nav__links">Блог</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
     </header>
     <main class="main">
-        <nav class="nav">
-            <ul class="nav__links">
-                <li class="nav__items">Каталог</li>
-                <li class="nav__items">Акции</li>
-                <li class="nav__items">О нас</li>
-                <li class="nav__items">Блог</li>
-            </ul>
-        </nav>
-        <section class="slider">
-            <div class="arrow-left">
-                <a href="#" class="arrow-left__links"></a>
-            </div>
-            <div class="slider-logo">
-                <div class="slider-logo__flow">
-                    <a href="#" class="slider-logo__picture"></a>
+        <div class="container">
+            <section class="slider">
+                <div class="slider-logo">
+                    <div class="slider-logo__flow">
+                        <img src="img/slider-logo.jpg" alt="" class="slider-logo__picture">
+                    </div>
+                    <div class="slider-desc">
+                            <div class="slider-desc__block">
+                            <h2 class="slider-desc__title">Labuten Cherry</h2>
+                            <span class="slider-desc__title2">Новая Весенная коллекция</span>
+                            <p class="slider-desc__txt">Мы рады представить вам новую коллекцию туфель
+                            от знаменитого дизайнера-модельера Криситана
+                            </p>
+                            <a href="#" class="slider-desc__btn">Купить сейчас</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider-desc">
-                    <h2 class="slider-desc__title">Labuten Cherry</h2>
-                    <span class="slider-desc__title">Новая Весенная коллекция</span>
-                    <p class="slider-desc__Txt">Мы рады представить вам новую коллекцию туфель
-                    от знаменитого дизайнера-модельера Криситана
-                    </p>
-                    <a href="#" class="slider-desc__btn">Купить сейчас</a>
+            </section>
+            <section class="discount">
+                <div class="offer-col offer-col--hide">
+                    <div class="offer-left">
+                        <h2 class="offer-col__title">Скидка 35%</h2>
+                        <p class="offer-col__txt">
+                            уникальное предложение недели действует только сейчас!
+                        </p>
+                        <a href="#" class="offer-left__btn">Подробнее</a>
+                    </div>
+                    <div class="offer-right">
+                        <img src="img/discount-logo.jpg" alt="" class="offer-right__img" width="150">
+                    </div>
                 </div>
-                <div class="arrow-right">
-                    <a href="#" class="arrow-right__btn">></a>
+                <div class="offer-col">
+                    <div class="offer-left">
+                        <h2 class="offer-col__title">Скидка 35%</h2>
+                        <p class="offer-col__txt">
+                            уникальное предложение недели действует только сейчас!
+                        </p>
+                        <a href="#" class="offer-left__btn">Подробнее</a>
+                    </div>
+                    <div class="offer-right">
+                        <img src="img/discount-logo.jpg" alt="" class="offer-right__img" width="150">
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="discount">
-            <div class="offer-col1">
-                <h2 class="offer-col1__title">10% Скидка</h2>
-                <p class="offer-col1__txt">
-                    уникальное предложение недели на всю старую коллекцию обьявлена скидка
-                </p>
-            </div>
-            <div class="offer-col2">
-                <h2 class="offer-col2__title">10% Скидка</h2>
-                <p class="offer-col2__txt">
-                    уникальное предложение недели на всю старую коллекцию обьявлена скидка
-                </p>
-            </div>
-            <div class="offer-col3">
-                <h2 class="offer-col3__title">10% Скидка</h2>
-                <p class="offer-col3__txt">
-                    уникальное предложение недели на всю старую коллекцию обьявлена скидка
-                </p>
-            </div>
-        </section>
-        <section class="shopping">
-            <figure class="shop-block">
-                <div class="shop-block__logo">
-                    <a href="#" class="shop-block__item"></a>
+                <div class="offer-col">
+                    <div class="offer-left">
+                        <h2 class="offer-col__title">Скидка 35%</h2>
+                        <p class="offer-col__txt">
+                            уникальное предложение недели действует только сейчас!
+                        </p>
+                        <a href="#" class="offer-left__btn">Подробнее</a>
+                    </div>
+                    <div class="offer-right">
+                        <img src="img/discount-logo.jpg" alt="" class="offer-right__img" width="150">
+                    </div>
                 </div>
-                <div class="shop-title">
-                    <h3 class="shop-title__item">labuten cherry</h3>
-                    <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+            </section>
+            <section class="shopping">
+                <div class="shop-block">
+                    <div class="shop-block__logo">
+                        <a href="#" class="shop-block__item">
+                            <img src="img/labu-img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="shop-title">
+                        <h3 class="shop-title__item">labuten cherry</h3>
+                        <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                    </div>
+                    <div class="shop-price">
+                        <span class="shop-price__item">$7000</span>
+                        <div class="shop-order">
+                            <div class="shop-price__basket">
+                                <a href="#" class="shop-price__basket-btn">
+                                    <i class="fa fa-shopping-basket shop-price__img" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="shop-price__info">
+                                <a href="#" class="shop-price__info-btn">
+                                    <img src="img/info.png" alt="" class="shop-price__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="shop-price">
-                    <a href="#" class="shop-price__item">$7000</a>
+                <div class="shop-block">
+                    <div class="shop-block__logo">
+                        <a href="#" class="shop-block__item">
+                            <img src="img/labu-img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="shop-title">
+                        <h3 class="shop-title__item">labuten cherry</h3>
+                        <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                    </div>
+                    <div class="shop-price">
+                        <span class="shop-price__item">$7000</span>
+                        <div class="shop-order">
+                            <div class="shop-price__basket">
+                                <a href="#" class="shop-price__basket-btn">
+                                    <i class="fa fa-shopping-basket shop-price__img" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="shop-price__info">
+                                <a href="#" class="shop-price__info-btn">
+                                    <img src="img/info.png" alt="" class="shop-price__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </figure>
-            <figure class="shop-block">
-                <div class="shop-block__logo">
-                    <a href="#" class="shop-block__item"></a>
+                <div class="shop-block">
+                    <div class="shop-block__logo">
+                        <a href="#" class="shop-block__item">
+                            <img src="img/labu-img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="shop-title">
+                        <h3 class="shop-title__item">labuten cherry</h3>
+                        <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                    </div>
+                    <div class="shop-price">
+                        <span class="shop-price__item">$7000</span>
+                        <div class="shop-order">
+                            <div class="shop-price__basket">
+                                <a href="#" class="shop-price__basket-btn">
+                                    <i class="fa fa-shopping-basket shop-price__img" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="shop-price__info">
+                                <a href="#" class="shop-price__info-btn">
+                                    <img src="img/info.png" alt="" class="shop-price__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="shop-title">
-                    <h3 class="shop-title__item">labuten cherry</h3>
-                    <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                <div class="shop-block">
+                    <div class="shop-block__logo">
+                        <a href="#" class="shop-block__item">
+                            <img src="img/labu-img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="shop-title">
+                        <h3 class="shop-title__item">labuten cherry</h3>
+                        <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                    </div>
+                    <div class="shop-price">
+                        <span class="shop-price__item">$7000</span>
+                        <div class="shop-order">
+                            <div class="shop-price__basket">
+                                <a href="#" class="shop-price__basket-btn">
+                                    <i class="fa fa-shopping-basket shop-price__img" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="shop-price__info">
+                                <a href="#" class="shop-price__info-btn">
+                                    <img src="img/info.png" alt="" class="shop-price__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="shop-price">
-                    <a href="#" class="shop-price__item">$7000</a>
+                <div class="shop-block">
+                    <div class="shop-block__logo">
+                        <a href="#" class="shop-block__item">
+                            <img src="img/labu-img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="shop-title">
+                        <h3 class="shop-title__item">labuten cherry</h3>
+                        <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                    </div>
+                    <div class="shop-price">
+                        <span class="shop-price__item">$7000</span>
+                        <div class="shop-order">
+                            <div class="shop-price__basket">
+                                <a href="#" class="shop-price__basket-btn">
+                                    <i class="fa fa-shopping-basket shop-price__img" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="shop-price__info">
+                                <a href="#" class="shop-price__info-btn">
+                                    <img src="img/info.png" alt="" class="shop-price__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </figure>
-            <figure class="shop-block">
-                <div class="shop-block__logo">
-                    <a href="#" class="shop-block__item"></a>
+                <div class="shop-block">
+                    <div class="shop-block__logo">
+                        <a href="#" class="shop-block__item">
+                            <img src="img/labu-img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="shop-title">
+                        <h3 class="shop-title__item">labuten cherry</h3>
+                        <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                    </div>
+                    <div class="shop-price">
+                        <span class="shop-price__item">$7000</span>
+                        <div class="shop-order">
+                            <div class="shop-price__basket">
+                                <a href="#" class="shop-price__basket-btn">
+                                    <i class="fa fa-shopping-basket shop-price__img" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="shop-price__info">
+                                <a href="#" class="shop-price__info-btn">
+                                    <img src="img/info.png" alt="" class="shop-price__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="shop-title">
-                    <h3 class="shop-title__item">labuten cherry</h3>
-                    <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                <div class="shop-block">
+                    <div class="shop-block__logo">
+                        <a href="#" class="shop-block__item">
+                            <img src="img/labu-img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="shop-title">
+                        <h3 class="shop-title__item">labuten cherry</h3>
+                        <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                    </div>
+                    <div class="shop-price">
+                        <span class="shop-price__item">$7000</span>
+                        <div class="shop-order">
+                        <div class="shop-price__basket">
+                            <a href="#" class="shop-price__basket-btn">
+                                <i class="fa fa-shopping-basket shop-price__img" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="shop-price__info">
+                            <a href="#" class="shop-price__info-btn">
+                                <img src="img/info.png" alt="" class="shop-price__img">
+                            </a>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="shop-price">
-                    <a href="#" class="shop-price__item">$7000</a>
+                <div class="shop-block">
+                    <div class="shop-block__logo">
+                        <a href="#" class="shop-block__item">
+                            <img src="img/labu-img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="shop-title">
+                        <h3 class="shop-title__item">labuten cherry</h3>
+                        <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
+                    </div>
+                    <div class="shop-price">
+                        <span class="shop-price__item">$7000</span>
+                        <div class="shop-order">
+                        <div class="shop-price__basket">
+                            <a href="#" class="shop-price__basket-btn">
+                                <i class="fa fa-shopping-basket shop-price__img" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="shop-price__info">
+                            <a href="#" class="shop-price__info-btn">
+                                <img src="img/info.png" alt="" class="shop-price__img">
+                            </a>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-            </figure>
-            <figure class="shop-block">
-                <div class="shop-block__logo">
-                    <a href="#" class="shop-block__item"></a>
-                </div>
-                <div class="shop-title">
-                    <h3 class="shop-title__item">labuten cherry</h3>
-                    <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
-                </div>
-                <div class="shop-price">
-                    <a href="#" class="shop-price__item">$7000</a>
-                </div>
-            </figure>
-            <figure class="shop-block">
-                <div class="shop-block__logo">
-                    <a href="#" class="shop-block__item"></a>
-                </div>
-                <div class="shop-title">
-                    <h3 class="shop-title__item">labuten cherry</h3>
-                    <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
-                </div>
-                <div class="shop-price">
-                    <a href="#" class="shop-price__item">$7000</a>
-                </div>
-            </figure>
-            <figure class="shop-block">
-                <div class="shop-block__logo">
-                    <a href="#" class="shop-block__item"></a>
-                </div>
-                <div class="shop-title">
-                    <h3 class="shop-title__item">labuten cherry</h3>
-                    <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
-                </div>
-                <div class="shop-price">
-                    <a href="#" class="shop-price__item">$7000</a>
-                </div>
-            </figure>
-            <figure class="shop-block">
-                <div class="shop-block__logo">
-                    <a href="#" class="shop-block__item"></a>
-                </div>
-                <div class="shop-title">
-                    <h3 class="shop-title__item">labuten cherry</h3>
-                    <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
-                </div>
-                <div class="shop-price">
-                    <a href="#" class="shop-price__item">$7000</a>
-                </div>
-            </figure>
-            <figure class="shop-block">
-                <div class="shop-block__logo">
-                    <a href="#" class="shop-block__item"></a>
-                </div>
-                <div class="shop-title">
-                    <h3 class="shop-title__item">labuten cherry</h3>
-                    <span class="shop-title__item">Супер ультра модная модель носить не сносить</span>
-                </div>
-                <div class="shop-price">
-                    <a href="#" class="shop-price__item">$7000</a>
-                </div>
-            </figure>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer">
-        <nav class="nav-footer">
-            <ul class="nav-footer__section">
-                <li class="nav-footer__item">Меню</li>
-                <li class="nav-footer__item">Каталог</li>
-                <li class="nav-footer__item">Блог</li>
-                <li class="nav-footer__item">Контакты</li>
-            </ul>
-        </nav>
-        <div class="random-content">
-            <ul class="random-content__section">
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-                <li class="random-content__list">Какая-то сылка</li>
-            </ul>
-        </div>
-        <div class="info">
-            <div class="social-info">
-                <a href="#" class="social-info__link">
-                    <img src="#" alt="" class="social-info__img">
-                </a>
-                <a href="#" class="social-info__link">
-                    <img src="#" alt="" class="social-info__img">
-                </a>
-                <a href="#" class="social-info__link">
-                    <img src="#" alt="" class="social-info__img">
-                </a>
-            </div>
-            <div class="phone">
-                <a href="tel:+7(915)458-75-65" class="phone__link-info">+7(915)458-75-65</a>
-                <a href="tel:+7(915)458-75-65" class="phone__link-info">+7(915)458-75-65</a>
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer-items">
+                    <div class="footer-items__title">
+                        <span class="footer-items__txt">Меню</span>
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-nav__links">
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-items__title">
+                        <span class="footer-items__txt">Каталог</span>
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-nav__links">
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-items__title">
+                        <span class="footer-items__txt">Блог</span>
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-nav__links">
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                            <li class="footer-nav__items">
+                                <a href="#" class="footer-nav__links">Какая то ссылка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <div class="footer-items__title">
+                        <span class="footer-items__txt">Контакты</span>
+                    </div>
+                    <ul class="footer-items__info">
+                        <li class="footer-items__items">Телефон: +7(915)458-75-65</li>
+                        <li class="footer-items__items">Факс: +7(915)458-75-65</li>
+                        <li class="footer-items__items">Email: <span class="footer-items__mail">mail@labuten.com</span></li>
+                    </ul>
+                    <div class="footer-items__social">
+                        <div class="social-info">
+                            <a href="#" class="social-info__link">
+                                <i class="fa fa-facebook social-info__icon" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-info__link">
+                                <i class="fa fa-vk social-info__icon" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-info__link">
+                                <i class="fa fa-twitter social-info__icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
